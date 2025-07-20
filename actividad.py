@@ -69,7 +69,6 @@ while attempts < 3:
     else:
         print("Verifique usuario o contraseña...")
         attempts = attempts +1
-    break
 if attempts >=3:
     print("ACCESO BLOQUEADO")
 
