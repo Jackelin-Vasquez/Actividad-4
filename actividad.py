@@ -159,8 +159,23 @@ print(f"La fecha {day}/{month}/{year} fue un día {day_weekend}")
 
 package_weight= int(input("Ingre peso del paquete en kg:"))
 distance= int(input("Ingrese distancia en km:"))
-urgency= input("Es una urgencia? si/no:")
-package_size= input("Ingrese tamaño de paquete (grande/mediano/pequeño):")
+urgency= input("Es una urgencia? si/no:").lower()
+package_size= input("Ingrese tamaño de paquete (grande/mediano/pequeño):").lower()
+
+cost_weight= package_weight * 5 #5 q por kg
+cost_distance= 5 * distance #1 q por k
+cost_base= cost_weight + cost_distance
+
+ if urgency == "si":
+     surcharge = 50
+ elif urgency =="no" and package_weight < 5:
+     discount= (cost_base -20)
+
+if package_size == "grande":
+    surcharge_size = 30
+else:
+    if package_size =="mediano":
+        surcharge==
 
 
 
