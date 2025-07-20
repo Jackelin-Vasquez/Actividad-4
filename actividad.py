@@ -77,34 +77,35 @@ if attempts >=3:
 #4. Simulacion de Facturación de IVA, descuentos y propina
 
 amount_products= int(input("Ingrese cantidad de productos:"))
-prices=[]
 add_prices= 0
 
 for product in range(amount_products):
     price= int(input(f"Ingrese percio de producto no.{product + 1}:"))
-    prices.append(price)
     add_prices = add_prices + price
 
-tip= input("¿Desea dejar propina?").lower
-frequent_customer= input("¿Tiene tarjeta de cliente frecuente?:").lower
-
+tip= input("¿Desea dejar propina? (si/no)").lower()
 if tip =="si":
-    amount= int(input("Ingrese cuanto desea dejar de propina:"))
-    price_amout= add_prices + amount
+    amount= int(input("Ingrese cuanto desea dejar de propina (en %):"))
+    amount_tip= (add_prices * amount)/100
 else:
-    amount= 0
+    amount_tip= 0
+
+frequent_customer= input("¿Tiene tarjeta de cliente frecuente? (si/no):").lower()
 
 if frequent_customer=="si":
     discount=(add_prices *10)/100
 else:
     discount= 0
 
+iva= (add_prices*12)/100
+total= add_prices + iva + amount_tip - discount
 
+print("---TOTAL DETALLADO---")
 print(f"Subtotal:{add_prices}")
-print(f"IVA:")
-print(f"propina:{amount}")
+print(f"IVA:{iva}")
+print(f"propina:{amount_tip}")
 print(f"Decuento:{discount}")
-print(f"Total:")
+print(f"Total:{total}")
 
 
 
