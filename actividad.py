@@ -45,4 +45,4 @@ else:
 total_income= annueal_income - percentage
 print(f"Su ingreso anual es de:{annueal_income} \n Monto dedudido por dependientes {dependents_deduction}")
 print(f"Ingreso despues de deducciones:{deducted_income}")
-print(f"Ingreso despues de impuestos: {total_income} \n Impuesto toal a pagar:{percentage}")
+print(f"Ingreso despues de impuestos: {total_income} \n Impuesto total a pagar:{percentage}")
