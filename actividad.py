@@ -28,14 +28,15 @@ annueal_income= float(input("Ingrese el ingreso anual:"))
 dependents_number= int(input("Ingrese número de dependientes:"))
 dependents_deduction= 1000 * dependents_number
 
+
 if annueal_income < 40000 and dependents_number > 2:
     percentage= 0
 
 elif annueal_income >=0 and annueal_income <=30000:
-    percentage= (annueal_income/5)*100
+    percentage= (annueal_income*5)/100
 elif annueal_income >=30001 and annueal_income <=60000:
-    percentage= (annueal_income/10)*100
+    percentage= (annueal_income*10)/100
 elif annueal_income >= 60001 and annueal_income <=100000:
-    percentage= (annueal_income/20)*100
+    percentage= (annueal_income*20)/100
 
 deducted_income= annueal_income - dependents_deduction
