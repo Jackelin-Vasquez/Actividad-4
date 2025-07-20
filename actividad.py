@@ -21,7 +21,6 @@ elif (dpi > 13) or (dpi < 13):
 else:
     print(f"Bienvenido {name},su centro de votación es {departamento.capitalize()}")
 """
-from calendar import month
 
 """"
 #Calculadora de Impuesto Progresivos y números de dependientes.
@@ -147,7 +146,7 @@ if month <3:
 j= year//100
 k= year %100
 
-h = (day + (((month +1)*26)/10)+k +(k/4)+(j+4)-2*j)%7
+h = (day + ((13*(month +1)/5))+k +(k/4)+(j/4)-2*j)%7
 day_weekend= days_weekend[int(h)]
 
 
