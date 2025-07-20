@@ -57,11 +57,18 @@ user_and_password= [
 ]
 attempts= 0
 
-while attempts <=3:
+while attempts < 3:
     user= input("Ingrese nombre de usuario:")
     password= input("Ingrese contraseña:")
 
-    if user == user_and_password [0] and password== user_and_password[1]:
-        print("Acceso concedido!")
+    for acces in user_and_password:
+        if user == acces[0] and password== acces[1]:
+            print("Acceso concedido!")
+            while True:
+                print("MENÚ \n 1. Ver perfil.\n 2. Cambiar contraseña. \n 3.Cerrar sesión")
+                break
     else:
-        ("Acceso denegado...")
+        print("Verifique usuario o contraseña...")
+        attempts = attempts +1
+if attempts >=3:
+    print("ACCESO BLOQUEADO")
