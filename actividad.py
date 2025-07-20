@@ -21,7 +21,7 @@ elif (dpi > 13) or (dpi < 13):
 else:
     print(f"Bienvenido {name},su centro de votación es {departamento.capitalize()}")
 """
-
+""""
 #Calculadora de Impuesto Progresivos y números de dependientes.
 
 annueal_income= float(input("Ingrese el ingreso anual:"))
@@ -46,3 +46,22 @@ total_income= annueal_income - percentage
 print(f"Su ingreso anual es de:{annueal_income} \n Monto dedudido por dependientes {dependents_deduction}")
 print(f"Ingreso despues de deducciones:{deducted_income}")
 print(f"Ingreso despues de impuestos: {total_income} \n Impuesto total a pagar:{percentage}")
+"""
+
+#Sistema de autenticación avanzado con penalización
+
+user_and_password= [
+    ["usuario1","perrito123"],
+    ["usuario2","osito123"],
+    ["usuario3","dinosaurio1"]
+]
+attempts= 0
+
+while attempts <=3:
+    user= input("Ingrese nombre de usuario:")
+    password= input("Ingrese contraseña:")
+
+    if user == user_and_password [0] and password== user_and_password[1]:
+        print("Acceso concedido!")
+    else:
+        ("Acceso denegado...")
