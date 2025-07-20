@@ -108,7 +108,7 @@ print(f"propina:{amount_tip}")
 print(f"Decuento:{discount}")
 print(f"Total:{total}")
 """
-
+"""
 #5.Verificador de fecha valida con día de la semana.
 
 day= int(input("Ingrese día:"))
@@ -153,6 +153,14 @@ day_weekend= days_weekend[int(h)]
 
 print(f"La fecha {day}/{month}/{year} fue un día {day_weekend}")
 
+"""
+
+#6.Clasificador de envios con multiples condiciones
+
+package_weight= int(input("Ingre peso del paquete en kg:"))
+distance= int(input("Ingrese distancia en km:"))
+urgency= input("Es una urgencia? si/no:")
+package_size= input("Ingrese tamaño de paquete (grande/mediano/pequeño):")
 
 
 
