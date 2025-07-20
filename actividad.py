@@ -76,3 +76,13 @@ if attempts >=3:
 
 #4. Simulacion de Facturación de IVA, descuentos y propina
 
+amount_products= int(input("Ingrese cantidad de productos:"))
+prices=[]
+
+for product in range(amount_products):
+    price= int(input(f"Ingrese percio de producto no.{product + 1}:"))
+    prices.append(price)
+
+tip= input("¿Desea dejar propina?")
+frequent_customer= input("¿Tiene tarjeta de cliente frecuente?:")
+
