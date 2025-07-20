@@ -73,7 +73,7 @@ if attempts >=3:
     print("ACCESO BLOQUEADO")
 
 """
-
+"""
 #4. Simulacion de Facturación de IVA, descuentos y propina
 
 amount_products= int(input("Ingrese cantidad de productos:"))
@@ -106,6 +106,33 @@ print(f"IVA:{iva}")
 print(f"propina:{amount_tip}")
 print(f"Decuento:{discount}")
 print(f"Total:{total}")
+"""
+
+#5.Verificador de fecha valida con día de la semana.
+
+day= int(input("Ingrese día:"))
+month= (input("Ingrese mes en números (1-12):"))
+year= int(input("Ingrese año:"))
+
+month_31= [1,3,5,7,8,10,12] #Estos meses tienen 32 días :D
+month_30 = [4,6,9,11]
+
+
+if month < 1 and month >12:
+    print("mes no valido!")
+
+if month in month_31:
+    if day >31:
+        print("Día no valido...")
+
+elif month in month_30:
+    if day >30:
+        print("Día no valido...")
+
+elif month==2:
+    if day >28:
+        prit("Día no valido")
+
 
 
 
