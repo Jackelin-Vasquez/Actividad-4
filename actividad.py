@@ -47,7 +47,7 @@ print(f"Su ingreso anual es de:{annueal_income} \n Monto dedudido por dependient
 print(f"Ingreso despues de deducciones:{deducted_income}")
 print(f"Ingreso despues de impuestos: {total_income} \n Impuesto total a pagar:{percentage}")
 """
-
+"""
 #Sistema de autenticación avanzado con penalización
 
 user_and_password= [
@@ -64,11 +64,16 @@ while attempts < 3:
     for acces in user_and_password:
         if user == acces[0] and password== acces[1]:
             print("Acceso concedido!")
-            while True:
-                print("MENÚ \n 1. Ver perfil.\n 2. Cambiar contraseña. \n 3.Cerrar sesión")
-                break
+            print("MENÚ \n 1. Ver perfil.\n 2. Cambiar contraseña. \n 3.Cerrar sesión")
+            break
     else:
         print("Verifique usuario o contraseña...")
         attempts = attempts +1
+    break
 if attempts >=3:
     print("ACCESO BLOQUEADO")
+
+"""
+
+#4. Simulacion de Facturación de IVA, descuentos y propina
+
