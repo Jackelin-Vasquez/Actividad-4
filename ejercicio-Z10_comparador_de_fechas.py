@@ -119,4 +119,4 @@ while month < month2:
 total_day_2 = total_day_2+ day2
 
 diference= total_day_1 - total_day_2
-print(f"Entre la fecha {date_1} y la fecha {date_2} han pasado {diference} día/s")
+print(f"Entre la fecha {date_1} y la fecha {date_2} han pasado {diference} día/s.")
