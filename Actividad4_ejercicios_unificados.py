@@ -360,3 +360,24 @@ if month1 == month2:
 else:
     print("No estan el mismo mes")
 
+total_day_1 = 0
+for y in range(year1):
+    if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
+        total_day_1 = total_day_1 + 366
+    else:
+        total_day_1 = total_day_1 + 365
+month = 1
+while month < month1:
+    if month == 2:
+        if (year1 % 4 == 0 and year1 % 100 != 0) or (year1 % 400 == 0):
+            total_day_1 =total_day_1+ 29
+        else:
+            total_day_1 = total_day_1 +28
+    elif month in month_30:
+        total_day_1 = total_day_1+ 30
+    else:
+        total_day_1 =total_day_1+ 31
+    month = month + 1
+
+total_day_1 = total_day_1+ day1
+
