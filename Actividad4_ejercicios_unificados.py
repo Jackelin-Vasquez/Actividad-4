@@ -381,3 +381,26 @@ while month < month1:
 
 total_day_1 = total_day_1+ day1
 
+
+
+
+total_day_2 = 0
+for y in range(year2):
+    if (y % 4 == 0 and y % 100 != 0) or (y % 400 == 0):
+        total_day_2 = total_day_2 + 366
+    else:
+        total_day_2 = total_day_2 + 365
+month = 1
+while month < month2:
+    if month == 2:
+        if (year2 % 4 == 0 and year2 % 100 != 0) or (year2 % 400 == 0):
+            total_day_2 =total_day_2+ 29
+        else:
+            total_day_2 = total_day_2 +28
+    elif month in month_30:
+        total_day_2 = total_day_2+ 30
+    else:
+        total_day_2 =total_day_2+ 31
+    month = month + 1
+
+total_day_2 = total_day_2+ day2
