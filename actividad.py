@@ -21,7 +21,6 @@ elif (dpi > 13) or (dpi < 13):
 else:
     print(f"Bienvenido {name},su centro de votación es {departamento.capitalize()}")
 """
-from operator import truediv
 
 """"
 #Calculadora de Impuesto Progresivos y números de dependientes.
@@ -118,7 +117,7 @@ year= int(input("Ingrese año:"))
 
 month_31= [1,3,5,7,8,10,12] #Estos meses tienen 32 días :D
 month_30 = [4,6,9,11] #estos 30
-days_weekend= ["Sabado","Domingo","Lunes","Martes","Miercoles","Jueves","Viernes"]
+days_week= ["Sabado","Domingo","Lunes","Martes","Miercoles","Jueves","Viernes"]
 
 
 if month < 1 or month >12:
@@ -150,9 +149,9 @@ k= year %100
 # h = (day + (((month +1)*26)/10)+k +(k/4)+(j+4)-2*j)%7
 h = (day + ((13*(month+1)//5))+k +(k//4)+(j//4)-2*j)%7
 
-day_weekend= days_weekend[int(h)]
+day_week= days_week[int(h)]
 
-print(f"La fecha {day}/{month}/{year} fue un día {day_weekend}")
+print(f"La fecha {day}/{month}/{year} fue un día {day_week}")
 
 """
 """
