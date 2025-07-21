@@ -258,7 +258,7 @@ else:
         elif coordinate2=="oeste":
             print("Debes moverte recto hacia el oeste")
 """
-
+"""
 #9. Simulador de entradas al cine con validación multiple
 
 age= int(input("Ingrese su edad:"))
@@ -282,5 +282,26 @@ else:
         price= 50
 
     print(f"El precio de su entrada es:{price}")
+"""
 
 
+#10. Comparador de fechas ( tipo calendario digital )
+
+date1= input("Ingrese fecha no.1 (dia/mes/año):")
+date1= date1.split("/")
+
+date2= input("Ingrese fecha no.2 (dia/mes/año):")
+date2= date2.split("/")
+
+day1= int(date1[0])
+month1= int(date1[1])
+year1=int(date1[2])
+
+day2=int(date2[0])
+month2=int(date2[1])
+year2=int(date2[2])
+
+month_31= [1,3,5,7,8,10,12] #Estos meses tienen 32 días :D
+month_30 = [4,6,9,11] #estos 30
+
+if month1 in month_31 or month2 in month_31:
