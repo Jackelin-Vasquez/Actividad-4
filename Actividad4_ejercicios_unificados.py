@@ -308,10 +308,10 @@ if month1 in month_31 or month2 in month_31:
     if (day1 < 1 or day1 >31) or (day2 <1 or day2 >31):
         print("Día no valido")
 elif month1 in month_30 or month2 in month_30:
-    if (day1 < 1 or day1 > 30) or (day2 <1 or day2 >30):
+    if (day1 < 1 or day1 > 30) or (day2 <1 or day2 >31):
         print("Día no valido")
 else:
-    if month1 ==2 or month2 ==2:
+    if month1 ==2 or month2 ==2
         leap_year1 = (year1 % 4 == 0 and year1 % 100 != 0) or (year1 % 400 == 0)
         leap_year2 = (year2 % 4 == 0 and year2 % 100 != 0) or (year2 % 400 == 0)
 
