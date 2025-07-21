@@ -336,10 +336,14 @@ else:
 
 if year1 > year2:
     print(f"La fecha {date_1} es mayor que la fecha {date_2}")
+    print("No estan en el mismo año")
 elif year1 < year2:
     print(f"la fecha {date_2} es mayor que la fecha {date_1}")
+    print("No estan en el mismo año")
 else:
-    if month1 > month2:
+    if year1 == year2:
+        print("Estan en el mismo año")
+    elif month1 > month2:
         print(f"la fecha {date_1} es mayor que la fecha {date_2}")
     elif month1 < month2:
         print(f"La fecha {date_2} es mayor que la fecha {date_1}")
@@ -350,3 +354,9 @@ else:
             print(f"La fecha {date_2} es mayor que la fecha {date_1}")
         else:
             print("Las fechas son iguales")
+
+if month1 == month2:
+    print("Estan en el mismo mes")
+else:
+    print("No estan el mismo mes")
+
