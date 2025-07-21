@@ -17,3 +17,5 @@ for ave in averages:
         print("No todos los promedios son menores a 70")
     else:
         print("Todos los promedios son menores a 70")
+
+        # Sin completar, faltaria sumar los 5 pts y volver a sacar promedios
