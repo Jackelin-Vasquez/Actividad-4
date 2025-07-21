@@ -215,4 +215,15 @@ for ave in averages:
 
 """
 
+#8.Calculadora de rumboo entre puntos cardinales
 
+coordinate1= input("Ingrese coordenada 1 (norte/sur/oeste/este):").lower()
+coordinate2= input("Ingrese coordenada 2 (norte/sur/oeste/este):").lower()
+
+if coordinate1 == coordinate2:
+    print(f"no debes de moverte, ya te encuentras en {coordinate1}")
+else:
+    if coordinate1 == "norte" and coordinate2=="este" or coordinate1 =="este" and coordinate2=="norte":
+        print("Debes ir al noreste")
+    elif coordinate1 =="sur" and coordinate2=="este" or coordinate1=="este" and coordinate2=="sur":
+        print("Debes ir al sureste")
