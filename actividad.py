@@ -191,6 +191,8 @@ print(f"Recargo por tamaño( si es grande):{surcharge_size}\n Recargo por urgenc
 print(f"Descuento: {discount}\ncosto total:{cost_total}")
 """
 
+"""
+
 #7. Sistema de calificaciones con curva
 students=[]
 averages=[]
@@ -202,11 +204,15 @@ for student in range(1,6):
     note3 = int(input("Ingrese nota 3:"))
     students.append([student_name,note1,note2,note3])
 
-for i in students
-    average=(i[1]+i[2]+i[3])/3
+    average= (note1 + note2 + note3)/3
     averages.append(average)
 
+for ave in averages:
+    if ave >=70:
+        print("No todos los promedios son menores a 70")
+    else:
+        print("Todos los promedios son menores a 70")
 
-
+"""
 
 
