@@ -215,7 +215,7 @@ for ave in averages:
         print("Todos los promedios son menores a 70")
 
 """
-
+"""
 #8.Calculadora de rumboo entre puntos cardinales
 
 coordinate1= input("Ingrese coordenada 1 (norte/sur/oeste/este):").lower()
@@ -258,3 +258,25 @@ else:
             print("Debes moverte hacia el sureste")
         elif coordinate2=="oeste":
             print("Debes moverte recto hacia el oeste")
+"""
+
+#9. Simulador de entradas al cine con validación multiple
+
+age= int(input("Ingrese su edad:"))
+day_week = input("Ingrese día de la semana:").lower()
+student= input("¿es estudiante:").lower()
+
+if age < 13:
+    print("No puede ver peliculas para mayores de 15 años")
+else:
+    print("Puede entrar a peliculas para mayores de 15 años :D")
+    if day_week == "miercoles":
+        price= 50
+    if student == "si":
+        price= 35
+    else:
+        price= 50
+
+    print(f"El precio de su entrada es:{price}")
+
+
